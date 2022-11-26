@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  
+  b{
+    margin:0 20vw 60vw 20vw;
+  }
+  /* Full-width inputs */
+  input[type=text], input[type=tel],input[type=email] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 0 20vw 0 20vw;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 20vw 0 20vw;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 1ch;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }</style>
+    <script type="module" src="/bundle.js"></script>
+<body >
+  
+							<li style="font-size: 3vw;list-style-type: none;" class="menu-item"><a id="welcomeaido" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Chưa đăng nhập</a></li>
+
+    <div >
+      <div class="imgcontainer">
+        <img src="https://uploads-ssl.webflow.com/604d8aa059681eb15035fd3e/615ded01944c1bc75022e4d7_old%20pogchamp%20that%20was%20banned.jpg" alt="Avatar" class="avatar">
+      </div>
+    
+      <div class="homchua">
+						<label for="uname"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" id="username" pattern="[A-Za-z]{3}" title="Three letter country code"  required>
+            <label for="psw"><b>Email</b></label>
+						<input type="email" placeholder="Enter Email" id="email" name="eml" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+						<label>
+						<label for="psw"><b>Số điện thoại</b></label>
+						<input type="tel" placeholder="Enter Telephone number" id="password" name="psw" required>
+						<label>
+                        <label for="pic"><b>Ảnh</b></label>
+						<input type="file" style="margin-left: 45vw;margin-right: auto;"name='pic'>
+						
+						<div class="button-thing" >
+							
+							
+						<div class="btn draw-border">
+						<button type="submit" class="bubbly-button button-53" onclick="alert('Gửi thành công')">Upload</button>
+							</div>
+						</div>
+						<div class="homchua">
+              <button type="button" onclick="signout()" class="cancelbtn button-54" >Sign out</button>
+              
+              </div>
+              <center>
+             
+                <div id="response"></div>
+            </center>
+					  </div>
+   
+</body>
+
+</html>
